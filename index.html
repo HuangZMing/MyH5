@@ -1,1 +1,53 @@
-14441414
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小钻风的看片儿日记2</title>
+    <style>
+
+        #pic{
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="pic">
+    <img id ="picture" src="http://ww2.sinaimg.cn/large/006tNc79ly1g4lrj9zietj31720pkb0r.jpg">
+</div>
+<div id="conten" align="center">
+<table>
+    <tr>
+        <td id="1">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+</table>
+</div>
+
+<script>
+    window.onload=function () {
+        document.getElementById("1").onclick=function () {
+            alert("1");
+        }
+        document.getElementById("picture").onclick=function () {
+            this.src="http://ww3.sinaimg.cn/large/006tNc79ly1g4lrgrh09tj308c08cmwx.jpg";
+        }
+    }
+</script>
+</body>
+
