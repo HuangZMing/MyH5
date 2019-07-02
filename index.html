@@ -1,1 +1,51 @@
-整一个网页。
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99multi</title>
+</head>
+<body>
+  
+ <img src="1.png">
+
+<style>
+
+    td{
+        border:1px solid red;
+    }
+</style>
+<script>
+
+    document.write("<table align='center'>");
+    for(var i=1;i<10;i++){
+        document.write("<tr>");
+        for (var j=1;j<=i;j++){
+            document.write("<td>");
+            document.write(i+"*"+j+"="+(i*j)+"&nbsp;&nbsp;");
+            document.write("</td>");
+        }
+        document.write("</tr>");
+    }
+
+</script>
+
+<script>
+
+    document.write(Math.floor(Math.random()*100)+1);
+</script>
+
+
+
+<script>
+    //正则表达式是用来定义字符串的规则
+    var reg=new RegExp("\\w{6,12}");
+
+    var reg2=/^\w{6,12}$/;
+
+    var a="zhangsa";
+
+    var flag=reg.test(a);
+    alert(flag);
+</script>
+</body>
+
