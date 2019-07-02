@@ -2,50 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>99multi</title>
+    <title>小钻风的看片儿日记2</title>
+    <style>
+
+        #pic{
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
-  
- <img src="http://ww1.sinaimg.cn/large/006tNc79ly1g4lpo0x11aj30pq0d8qbo.jpg">
 
-<style>
+<div id="pic">
+    <img id ="picture" src="http://ww2.sinaimg.cn/large/006tNc79ly1g4lrj9zietj31720pkb0r.jpg">
+</div>
+<div id="conten" align="center">
+<table>
+    <tr>
+        <td id="1">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+</table>
+</div>
 
-    td{
-        border:1px solid red;
-    }
-</style>
 <script>
-
-    document.write("<table align='center'>");
-    for(var i=1;i<10;i++){
-        document.write("<tr>");
-        for (var j=1;j<=i;j++){
-            document.write("<td>");
-            document.write(i+"*"+j+"="+(i*j)+"&nbsp;&nbsp;");
-            document.write("</td>");
+    window.onload=function () {
+        document.getElementById("1").onclick=function () {
+            alert("1");
         }
-        document.write("</tr>");
+        document.getElementById("picture").onclick=function () {
+            this.src="http://ww3.sinaimg.cn/large/006tNc79ly1g4lrgrh09tj308c08cmwx.jpg";
+        }
     }
-
-</script>
-
-<script>
-
-    document.write(Math.floor(Math.random()*100)+1);
-</script>
-
-
-
-<script>
-    //正则表达式是用来定义字符串的规则
-    var reg=new RegExp("\\w{6,12}");
-
-    var reg2=/^\w{6,12}$/;
-
-    var a="zhangsa";
-
-    var flag=reg.test(a);
-    alert(flag);
 </script>
 </body>
-
+</html>
